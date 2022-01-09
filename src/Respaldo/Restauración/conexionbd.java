@@ -16,7 +16,11 @@ public class conexionbd {
     public ResultSet resultado;
     final String Controlador = "com.mysql.cj.jdbc.Driver";
     public static String usersql, passsql;
+<<<<<<< HEAD
     private final String bd1 = conb.getBD();
+=======
+    public static String bd1 = "BCOIN";
+>>>>>>> 626f0fa40074b851c4292ec5b936f29707be45aa
     final String url_bd = "jdbc:mysql://localhost/?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
     final String url_bd2 = "jdbc:mysql://localhost/" + bd1 + "?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
     
