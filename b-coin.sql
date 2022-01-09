@@ -1,0 +1,76 @@
+USE BCOIN;
+-- CREATE TABLE provedores(
+-- RFC INT PRIMARY KEY NOT NULL,
+-- Nombre VARCHAR (20) NOT NULL,
+-- Empresa VARCHAR (20) NOT NULL
+-- );
+-- CREATE TABLE ProductoProvedor(
+-- id_Productos INT NOT NULL,
+-- RFC INT NOT NULL,
+-- CONSTRAINT FOREIGN KEY fk_provedores (RFC) REFERENCES provedores(RFC),
+-- CONSTRAINT FOREIGN KEY fk_provedoresProducto (id_Productos) REFERENCES Productos(Id_Productos)
+-- );
+
+-- CREATE TABLE Telefono_Provedor(
+-- id_telefono INT PRIMARY KEY NOT NULL,
+-- Telefono VARCHAR (10) NOT NULL,
+-- RFC INT NOT NULL,
+-- CONSTRAINT FOREIGN KEY fk_ProvedoresTelefono (RFC) REFERENCES provedores(RFC)
+-- );
+-- CREATE TABLE Productos(
+-- Id_Productos INT PRIMARY KEY NOT NULL,
+-- Nombre VARCHAR(20) NOT NULL,
+-- Precio FLOAT NOT NULL
+-- );
+-- CREATE TABLE Compras(
+-- FolioCompras INT PRIMARY KEY NOT NULL,
+-- Total FLOAT NOT NULL,
+-- Fecha DATE NOT NULL,
+-- Descuento INT NOT NULL
+-- );
+
+-- CREATE TABLE ProductoCompras(
+-- Id_Productos INT NOT NULL,
+-- FolioCompras INT NOT NULL,
+-- Subtotal FLOAT NOT NULL,
+-- CONSTRAINT FOREIGN KEY fk_ProductoCompras (Id_Productos) REFERENCES Productos(Id_Productos),
+-- CONSTRAINT foreign key fk_Compras (FolioCompras) REFERENCES Compras(FolioCompras)
+-- );
+-- CREATE TABLE Inventario(
+-- FolioInventario INT PRIMARY KEY NOT NULL,
+-- Id_Productos INT NOT NULL,
+-- Stock INT NOT NULL,
+-- CONSTRAINT FOREIGN KEY fk_ProductoINventario (Id_Productos) REFERENCES Productos(Id_Productos)
+-- );
+-- CREATE TABLE Ventas(
+-- Folio INT PRIMARY KEY NOT NULL,
+-- Total FLOAT NOT NULL,
+-- Fecha DATE NOT NULL,
+-- Descuento INT NOT NULL
+-- );
+-- CREATE TABLE Trabajadores(
+-- Id_Trabajador INT PRIMARY KEY NOT NULL,
+-- Nombre1_T VARCHAR (20) NOT NULL,
+-- Nombre2_T VARCHAR (20) NOT NULL,
+-- Apellido_P VARCHAR (20) NOT NULL,
+-- Apellido_M VARCHAR (20) NOT NULL
+-- );
+-- CREATE TABLE ProductoVentas(
+-- Id_Productos INT NOT NULL,
+-- Folio INT NOT NULL,
+-- Subtotal FLOAT NOT NULL,
+-- CONSTRAINT FOREIGN KEY fk_ProductoVentas (Id_Productos) REFERENCES Productos(Id_Productos),
+-- CONSTRAINT FOREIGN KEY fk_ProductoFOLIO (Folio) REFERENCES Ventas(Folio)
+-- );
+-- CREATE TABLE VentasTrabajador(
+-- Folio INT NOT NULL,
+-- Id_Trabajador INT NOT NULL,
+--  CONSTRAINT FOREIGN KEY fk_VentasTrabajador (Folio) REFERENCES Ventas(Folio),
+-- CONSTRAINT FOREIGN KEY fk_ProductoTrabajador (Id_Trabajador) REFERENCES Trabajadores(Id_Trabajador)
+-- );
+-- CREATE TABLE TelefonoTrabajador(
+-- Id_Telefono INT PRIMARY KEY NOT NULL,
+-- Telefono VARCHAR(10) NOT NULL,
+-- Id_Trabajador INT NOT NULL,
+-- CONSTRAINT FOREIGN KEY fk_TeleTrabajador (Id_Trabajador) REFERENCES Trabajadores(Id_Trabajador)
+-- );
