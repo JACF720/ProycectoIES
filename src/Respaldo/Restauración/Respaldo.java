@@ -24,7 +24,7 @@ public class Respaldo {
             Process p = Runtime.getRuntime().exec("mysqldump -u "+us+" -p"+contraseña+" "+bd);
             new Error(p.getErrorStream()).start();
             InputStream is = p.getInputStream();//Pedimos la entrada
-            FileOutputStream fos = new FileOutputStream("laboratorio_clinico.sql"); //creamos el archivo para le respaldo
+            FileOutputStream fos = new FileOutputStream("BCOIN.sql"); //creamos el archivo para le respaldo
             byte[] buffer = new byte[1000]; //Creamos una variable de tipo byte para el buffer
             
             int leido = is.read(buffer); //Devuelve el número de bytes leídos o -1 si se alcanzó el final del stream.
