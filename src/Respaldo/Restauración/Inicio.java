@@ -114,7 +114,7 @@ public class Inicio extends javax.swing.JFrame {
                 setBD(bd);
                 a.ValidarUs(user, psw);
                 a.ConectarBasedeDatos();
-//                exp.Restauración(user, psw);
+////                exp.Restauración(user, psw);
                 exp.Respaldo(user, psw);
                 in.setVisible(true);
                 this.dispose();
